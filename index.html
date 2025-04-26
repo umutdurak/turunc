@@ -13,6 +13,7 @@
       margin: 0;
       padding: 0;
       overflow-x: hidden;
+      position: relative;
     }
     header, section {
       padding: 40px 20px;
@@ -22,11 +23,12 @@
     img.logo {
       width: 200px;
       margin: 20px 0;
+      background-color: #0d0d0d;
+      padding: 10px;
+      border-radius: 10px;
     }
-    h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-      text-shadow: 2px 2px #000;
+    h1, header p {
+      display: none;
     }
     h2 {
       font-size: 2em;
@@ -68,6 +70,9 @@
     .gallery img {
       width: 200px;
       height: auto;
+      background-color: #0d0d0d;
+      padding: 10px;
+      border-radius: 10px;
     }
     .smoke {
       position: fixed;
@@ -76,14 +81,14 @@
       width: 100%;
       height: 100%;
       pointer-events: none;
-      background: url('https://www.transparenttextures.com/patterns/clouds.png') repeat;
-      opacity: 0.07;
-      animation: moveSmoke 120s linear infinite;
+      background: radial-gradient(circle, rgba(255,255,255,0.02) 0%, rgba(0,0,0,0) 70%) repeat;
+      opacity: 0.15;
+      animation: moveSmoke 60s linear infinite;
       z-index: 1;
     }
     @keyframes moveSmoke {
-      from { background-position: 0 0; }
-      to { background-position: 10000px 0; }
+      0% { background-position: 0 0; }
+      100% { background-position: 1000px 1000px; }
     }
   </style>
 </head>
@@ -91,8 +96,6 @@
   <div class="smoke"></div>
   <header>
     <img src="images/logo1.jpeg" alt="Turunç Logo" class="logo">
-    <h1>Turunç</h1>
-    <p>Turkish Grunge from Braunschweig, Germany</p>
   </header>
 
   <section class="intro">
@@ -120,11 +123,11 @@
   <section>
     <h2>Band Members</h2>
     <ul>
-      <li>Emre - Lead Guitar</li>
-      <li>Onur - Vocals & Rhythm Guitar</li>
-      <li>Umut - Bass Guitar</li>
-      <li>Cem - Keyboard</li>
-      <li>Tuna - Drums</li>
+      <li>Emre - Lead Guitar (Aerospace Engineer)</li>
+      <li>Onur - Vocals & Rhythm Guitar (Computer Scientist)</li>
+      <li>Umut - Bass Guitar (Computer Scientist)</li>
+      <li>Cem - Keyboard (Computer Scientist)</li>
+      <li>Tuna - Drums (Medical Doctor)</li>
     </ul>
   </section>
 
