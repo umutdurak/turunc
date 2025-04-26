@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turunç - Turkish Grunge</title>
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #f57c00;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    header, section {
+      padding: 40px 20px;
+      position: relative;
+      z-index: 2;
+    }
+    img.logo {
+      width: 200px;
+      margin: 20px 0;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px #000;
+    }
+    h2 {
+      font-size: 2em;
+      margin-top: 40px;
+      text-shadow: 1px 1px #000;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1.2em;
+    }
+    li {
+      margin: 10px 0;
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 0.8em;
+      color: #888;
+      position: relative;
+      z-index: 2;
+    }
+    .intro {
+      background: linear-gradient(rgba(0,0,0,0.8), rgba(255,87,34,0.1));
+      padding: 50px 20px;
+    }
+    .intro p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.2em;
+      line-height: 1.6em;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .gallery img {
+      width: 200px;
+      height: auto;
+    }
+    .smoke {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      background: url('https://www.transparenttextures.com/patterns/clouds.png') repeat;
+      opacity: 0.07;
+      animation: moveSmoke 120s linear infinite;
+      z-index: 1;
+    }
+    @keyframes moveSmoke {
+      from { background-position: 0 0; }
+      to { background-position: 10000px 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="smoke"></div>
+  <header>
+    <img src="images/logo1.jpeg" alt="Turunç Logo" class="logo">
+    <h1>Turunç</h1>
+    <p>Turkish Grunge from Braunschweig, Germany</p>
+  </header>
+
+  <section class="intro">
+    <h2>About Us</h2>
+    <p>
+      Turunç is a Turkish Grunge band formed in Braunschweig, Germany by five friends originally from Ankara. 
+      Bringing backgrounds in computer science, aerospace engineering, and medicine, their sound merges precision with passion. 
+      Emre (lead guitar), Onur (vocals & rhythm guitar), Umut (bass guitar), Cem (keyboard), and Tuna (drums) breathe new life into 
+      Turkish rock classics from legendary bands like Duman, Mor ve Ötesi, Pilli Bebek, and Barış Manço.
+    </p>
+  </section>
+
+  <section>
+    <h2>Setlist</h2>
+    <ul>
+      <li>1 - Senden Daha Güzel</li>
+      <li>2 - Yürek</li>
+      <li>3 - Sevda Çiçeği</li>
+      <li>4 - Her Şeyi Yak</li>
+      <li>5 - Olsun</li>
+      <li>6 - Gurbet</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Band Members</h2>
+    <ul>
+      <li>Emre - Lead Guitar</li>
+      <li>Onur - Vocals & Rhythm Guitar</li>
+      <li>Umut - Bass Guitar</li>
+      <li>Cem - Keyboard</li>
+      <li>Tuna - Drums</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="images/logo2.jpeg" alt="Turunç Logo 2">
+      <img src="images/logo3.jpeg" alt="Turunç Logo 3">
+      <img src="images/logo4.jpeg" alt="Turunç Live Performance">
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Turunç. All rights reserved.
+  </footer>
+</body>
+</html>
